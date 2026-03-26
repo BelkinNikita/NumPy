@@ -13,10 +13,6 @@ raa = np.array([[10,9,8],
                 [7,6,5], 
                 [4,3,2]])
 
-
-
- 
-
 #Generate arrays
 print("Zeros: "             + str( np.zeros((2,5))                             )            ) # ... (col, rows) of zeros
 print("Ones: "              + str( np.ones((2,5))                              )            ) # ... (col, rows) of ones
@@ -29,7 +25,6 @@ print("Diagonal Matrix: "   + str( np.diag([2,4,7,9,11])                       )
 print("Identity: "          + str( np.identity(8)                              )            ) # works as ⬆np.diag⬆, but all numbers are identical
 print("Eye: "               + str( np.eye(8, 7, k=1)                           )            ) # works as ⬆np.identity⬆, bit has additional args
 print("From function: "     + str( np.fromfunction(lambda i,j:i+j,(3,3))       )            ) # returns a new array
-
 
 # Array Manipulation
 print("Ravel  : "           + str( np.ravel(arr)                               )            ) # returns the array as a one-dimensional one 
@@ -106,9 +101,3 @@ print("logical_or  : "      + str( np.logical_or(2>1,8<5)                      )
 print("logical_not  : "     + str( np.logical_not(3<1)                         )            ) # if not True 
 print("all  : "             + str( np.all([1,2,3,4,5])                         )            ) # checks for > 0
 print("any  : "             + str( np.any([True,False,True,False])             )            ) # tests for True        
-
-
-
-
-
-
