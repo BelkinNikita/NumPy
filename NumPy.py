@@ -101,3 +101,7 @@ print("logical_or  : "      + str( np.logical_or(2>1,8<5)                      )
 print("logical_not  : "     + str( np.logical_not(3<1)                         )            ) # if not True 
 print("all  : "             + str( np.all([1,2,3,4,5])                         )            ) # checks for > 0
 print("any  : "             + str( np.any([True,False,True,False])             )            ) # tests for True        
+
+# Save / Load
+np.save('my_array.npy', arr)
+print(f"Save/Load.npy:\n {np.load('my_array.npy')}")
